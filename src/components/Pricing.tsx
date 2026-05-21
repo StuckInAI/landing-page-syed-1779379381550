@@ -19,18 +19,18 @@ function PricingCard({ name, price, period, description, features, cta, highligh
       className={clsx(
         'relative rounded-2xl p-8 border flex flex-col transition-all duration-300 card-glow',
         highlighted
-          ? 'bg-[#6C63FF]/10 border-[#6C63FF]/50 shadow-xl shadow-[#6C63FF]/10'
-          : 'bg-[#16162A] border-white/5 hover:border-white/10'
+          ? 'bg-[#DC2626]/10 border-[#DC2626]/50 shadow-xl shadow-[#DC2626]/10'
+          : 'bg-[#1A0E0E] border-white/5 hover:border-white/10'
       )}
     >
       {badge && (
         <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-          <span className="bg-[#6C63FF] text-white text-xs font-bold px-4 py-1 rounded-full">{badge}</span>
+          <span className="bg-[#DC2626] text-white text-xs font-bold px-4 py-1 rounded-full">{badge}</span>
         </div>
       )}
 
       <div className="mb-6">
-        <h3 className={clsx('font-semibold text-base mb-1', highlighted ? 'text-[#6C63FF]' : 'text-white/70')}>{name}</h3>
+        <h3 className={clsx('font-semibold text-base mb-1', highlighted ? 'text-[#DC2626]' : 'text-white/70')}>{name}</h3>
         <div className="flex items-end gap-1 mb-2">
           <span className="text-4xl font-extrabold text-white">{price}</span>
           {period && <span className="text-white/40 text-sm mb-1">{period}</span>}
@@ -41,7 +41,7 @@ function PricingCard({ name, price, period, description, features, cta, highligh
       <ul className="flex flex-col gap-3 mb-8 flex-1">
         {features.map((feat, i) => (
           <li key={i} className="flex items-start gap-2">
-            <Check className={clsx('w-4 h-4 mt-0.5 flex-shrink-0', highlighted ? 'text-[#6C63FF]' : 'text-[#43D9AD]')} />
+            <Check className={clsx('w-4 h-4 mt-0.5 flex-shrink-0', highlighted ? 'text-[#DC2626]' : 'text-[#EAB308]')} />
             <span className="text-white/60 text-sm">{feat}</span>
           </li>
         ))}
@@ -51,7 +51,7 @@ function PricingCard({ name, price, period, description, features, cta, highligh
         className={clsx(
           'w-full py-3 rounded-xl font-medium text-sm transition-all',
           highlighted
-            ? 'bg-[#6C63FF] hover:bg-[#4B44CC] text-white'
+            ? 'bg-[#DC2626] hover:bg-[#B91C1C] text-white'
             : 'bg-white/5 hover:bg-white/10 text-white border border-white/10'
         )}
       >
@@ -118,11 +118,11 @@ export default function Pricing() {
   const [annual, setAnnual] = useState(false);
 
   return (
-    <section id="pricing" className="py-24 bg-[#16162A]">
+    <section id="pricing" className="py-24 bg-[#1A0E0E]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-[#6C63FF]/10 border border-[#6C63FF]/20 rounded-full px-4 py-1.5 mb-5">
-            <span className="text-xs text-[#6C63FF] font-medium uppercase tracking-widest">Pricing</span>
+          <div className="inline-flex items-center gap-2 bg-[#DC2626]/10 border border-[#DC2626]/20 rounded-full px-4 py-1.5 mb-5">
+            <span className="text-xs text-[#DC2626] font-medium uppercase tracking-widest">Pricing</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4">
             Simple,{' '}
@@ -139,7 +139,7 @@ export default function Pricing() {
               onClick={() => setAnnual((v) => !v)}
               className={clsx(
                 'relative w-12 h-6 rounded-full transition-colors',
-                annual ? 'bg-[#6C63FF]' : 'bg-white/10'
+                annual ? 'bg-[#DC2626]' : 'bg-white/10'
               )}
             >
               <span
@@ -151,7 +151,7 @@ export default function Pricing() {
             </button>
             <span className={clsx('text-sm', annual ? 'text-white' : 'text-white/40')}>Annual</span>
             {annual && (
-              <span className="bg-[#43D9AD]/20 text-[#43D9AD] text-xs font-medium px-2 py-0.5 rounded-full">
+              <span className="bg-[#EAB308]/20 text-[#EAB308] text-xs font-medium px-2 py-0.5 rounded-full">
                 Save 20%
               </span>
             )}

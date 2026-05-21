@@ -12,7 +12,7 @@ export default function LogoStrip() {
         {logos.map((logo) => (
           <span
             key={logo}
-            className="text-white/20 font-bold text-lg hover:text-white/50 transition-colors cursor-default select-none tracking-wide"
+            className="text-white/20 font-bold text-lg hover:text-[#EAB308]/70 transition-colors cursor-default select-none tracking-wide"
           >
             {logo}
           </span>

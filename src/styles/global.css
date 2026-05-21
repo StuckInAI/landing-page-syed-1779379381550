@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #6C63FF;
-  --color-brand-dark: #4B44CC;
-  --color-brand-light: #EEF0FF;
-  --color-accent: #FF6584;
-  --color-surface: #0F0F1A;
-  --color-surface-2: #16162A;
-  --color-surface-3: #1E1E35;
+  --color-brand: #DC2626;
+  --color-brand-dark: #B91C1C;
+  --color-brand-light: #FEF2F2;
+  --color-accent: #EAB308;
+  --color-surface: #0F0A0A;
+  --color-surface-2: #1A0E0E;
+  --color-surface-3: #221414;
   --font-display: 'Inter', system-ui, sans-serif;
 }
 
@@ -23,8 +23,8 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: #0F0F1A;
-    color: #E2E2F0;
+    background-color: #0F0A0A;
+    color: #F0E8E8;
     font-family: 'Inter', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
@@ -34,28 +34,28 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #0F0F1A;
+    background: #0F0A0A;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #6C63FF;
+    background: #DC2626;
     border-radius: 3px;
   }
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #6C63FF 0%, #FF6584 100%);
+  background: linear-gradient(135deg, #DC2626 0%, #EAB308 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .hero-glow {
-  background: radial-gradient(ellipse at 50% 0%, rgba(108, 99, 255, 0.25) 0%, transparent 70%);
+  background: radial-gradient(ellipse at 50% 0%, rgba(220, 38, 38, 0.25) 0%, transparent 70%);
 }
 
 .card-glow:hover {
-  box-shadow: 0 0 40px rgba(108, 99, 255, 0.15);
+  box-shadow: 0 0 40px rgba(220, 38, 38, 0.15);
 }
 
 .blob-bg {

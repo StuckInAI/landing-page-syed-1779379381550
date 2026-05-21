@@ -11,7 +11,7 @@ type TestimonialCardProps = {
 
 function TestimonialCard({ name, role, initials, color, quote, rating }: TestimonialCardProps) {
   return (
-    <div className="bg-[#16162A] border border-white/5 rounded-2xl p-6 flex flex-col gap-4 card-glow hover:border-white/10 transition-all">
+    <div className="bg-[#1A0E0E] border border-white/5 rounded-2xl p-6 flex flex-col gap-4 card-glow hover:border-white/10 transition-all">
       {/* Stars */}
       <div className="flex gap-1">
         {Array.from({ length: rating }).map((_, i) => (
@@ -42,7 +42,7 @@ const testimonials: TestimonialCardProps[] = [
     name: 'Sarah Chen',
     role: 'CTO @ Buildly',
     initials: 'SC',
-    color: '#6C63FF',
+    color: '#DC2626',
     quote: 'NovaSpark cut our deploy time from 12 minutes to under 2 seconds. Our engineers finally have time to focus on what matters.',
     rating: 5,
   },
@@ -50,7 +50,7 @@ const testimonials: TestimonialCardProps[] = [
     name: 'Marcus Feld',
     role: 'Lead Engineer @ Orbit',
     initials: 'MF',
-    color: '#FF6584',
+    color: '#EAB308',
     quote: 'The preview environments alone are worth the price of admission. We catch bugs in PRs before they ever reach main.',
     rating: 5,
   },
@@ -58,7 +58,7 @@ const testimonials: TestimonialCardProps[] = [
     name: 'Priya Nair',
     role: 'VP Engineering @ Lumio',
     initials: 'PN',
-    color: '#43D9AD',
+    color: '#B91C1C',
     quote: 'Migrated our entire infra in a weekend. The documentation is stellar and support was incredibly responsive.',
     rating: 5,
   },
@@ -66,7 +66,7 @@ const testimonials: TestimonialCardProps[] = [
     name: 'Jake Torres',
     role: 'Solo Founder @ Craftd',
     initials: 'JT',
-    color: '#FFB347',
+    color: '#CA8A04',
     quote: 'As a solo dev, having one platform that handles CI/CD, monitoring, and deployments is a game changer. Highly recommend.',
     rating: 5,
   },
@@ -74,7 +74,7 @@ const testimonials: TestimonialCardProps[] = [
     name: 'Lena Müller',
     role: 'DevOps Lead @ FluxAI',
     initials: 'LM',
-    color: '#6C63FF',
+    color: '#DC2626',
     quote: 'The AI anomaly detection caught a memory leak in production before any users were impacted. Absolutely invaluable.',
     rating: 5,
   },
@@ -82,7 +82,7 @@ const testimonials: TestimonialCardProps[] = [
     name: 'Amir Hassan',
     role: 'Engineering Manager @ Kova',
     initials: 'AH',
-    color: '#FF6584',
+    color: '#EAB308',
     quote: 'Our whole team onboarded in a day. The UX is intuitive and the performance metrics speak for themselves.',
     rating: 5,
   },
@@ -92,8 +92,8 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
-        <div className="inline-flex items-center gap-2 bg-[#6C63FF]/10 border border-[#6C63FF]/20 rounded-full px-4 py-1.5 mb-5">
-          <span className="text-xs text-[#6C63FF] font-medium uppercase tracking-widest">Testimonials</span>
+        <div className="inline-flex items-center gap-2 bg-[#DC2626]/10 border border-[#DC2626]/20 rounded-full px-4 py-1.5 mb-5">
+          <span className="text-xs text-[#DC2626] font-medium uppercase tracking-widest">Testimonials</span>
         </div>
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4">
           Loved by{' '}

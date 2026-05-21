@@ -47,7 +47,7 @@ function FAQItem({ question, answer }: FAQItemProps) {
     <div
       className={clsx(
         'border rounded-xl overflow-hidden transition-all',
-        open ? 'border-[#6C63FF]/40 bg-[#6C63FF]/5' : 'border-white/5 bg-[#16162A]'
+        open ? 'border-[#DC2626]/40 bg-[#DC2626]/5' : 'border-white/5 bg-[#1A0E0E]'
       )}
     >
       <button
@@ -75,15 +75,15 @@ export default function FAQ() {
   return (
     <section id="faq" className="py-24 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-[#6C63FF]/10 border border-[#6C63FF]/20 rounded-full px-4 py-1.5 mb-5">
-          <span className="text-xs text-[#6C63FF] font-medium uppercase tracking-widest">FAQ</span>
+        <div className="inline-flex items-center gap-2 bg-[#DC2626]/10 border border-[#DC2626]/20 rounded-full px-4 py-1.5 mb-5">
+          <span className="text-xs text-[#DC2626] font-medium uppercase tracking-widest">FAQ</span>
         </div>
         <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
           Frequently asked{' '}
           <span className="gradient-text">questions</span>
         </h2>
         <p className="text-white/50 text-lg">
-          Still have questions? <a href="#" className="text-[#6C63FF] hover:underline">Chat with us</a>.
+          Still have questions? <a href="#" className="text-[#DC2626] hover:underline">Chat with us</a>.
         </p>
       </div>
 

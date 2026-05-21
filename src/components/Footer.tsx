@@ -9,13 +9,13 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/5 bg-[#0F0F1A]">
+    <footer className="border-t border-white/5 bg-[#0F0A0A]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-2 md:grid-cols-6 gap-10 mb-12">
           {/* Brand */}
           <div className="col-span-2">
             <a href="#" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-[#6C63FF] flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-[#DC2626] flex items-center justify-center">
                 <Zap className="w-4 h-4 text-white" />
               </div>
               <span className="font-bold text-lg text-white">NovaSpark</span>
@@ -33,7 +33,7 @@ export default function Footer() {
                 <a
                   key={i}
                   href={social.href}
-                  className="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#6C63FF]/20 text-white/40 hover:text-[#6C63FF] flex items-center justify-center transition-all"
+                  className="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#DC2626]/20 text-white/40 hover:text-[#DC2626] flex items-center justify-center transition-all"
                 >
                   {social.icon}
                 </a>
@@ -64,7 +64,7 @@ export default function Footer() {
             © {new Date().getFullYear()} NovaSpark, Inc. All rights reserved.
           </p>
           <div className="flex items-center gap-1">
-            <span className="w-2 h-2 rounded-full bg-[#43D9AD] animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-[#EAB308] animate-pulse" />
             <span className="text-white/30 text-xs">All systems operational</span>
           </div>
         </div>

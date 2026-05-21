@@ -14,14 +14,14 @@ function FeatureCard({ icon, title, description, highlight }: FeatureCardProps) 
       className={clsx(
         'relative rounded-2xl p-6 border transition-all duration-300 card-glow group',
         highlight
-          ? 'bg-[#6C63FF]/10 border-[#6C63FF]/40'
-          : 'bg-[#16162A] border-white/5 hover:border-white/10'
+          ? 'bg-[#DC2626]/10 border-[#DC2626]/40'
+          : 'bg-[#1A0E0E] border-white/5 hover:border-white/10'
       )}
     >
       <div
         className={clsx(
           'w-11 h-11 rounded-xl flex items-center justify-center mb-4',
-          highlight ? 'bg-[#6C63FF]' : 'bg-[#1E1E35] group-hover:bg-[#6C63FF]/20 transition-colors'
+          highlight ? 'bg-[#DC2626]' : 'bg-[#221414] group-hover:bg-[#DC2626]/20 transition-colors'
         )}
       >
         {icon}
@@ -35,7 +35,7 @@ function FeatureCard({ icon, title, description, highlight }: FeatureCardProps) 
 export default function Features() {
   const features = [
     {
-      icon: <Zap className="w-5 h-5 text-[#6C63FF]" />,
+      icon: <Zap className="w-5 h-5 text-[#DC2626]" />,
       title: 'Instant Deploys',
       description: 'Push your code and watch it go live in under 2 seconds. Zero config, zero friction.',
       highlight: true,
@@ -71,8 +71,8 @@ export default function Features() {
     <section id="features" className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Section header */}
       <div className="text-center mb-16">
-        <div className="inline-flex items-center gap-2 bg-[#6C63FF]/10 border border-[#6C63FF]/20 rounded-full px-4 py-1.5 mb-5">
-          <span className="text-xs text-[#6C63FF] font-medium uppercase tracking-widest">Features</span>
+        <div className="inline-flex items-center gap-2 bg-[#DC2626]/10 border border-[#DC2626]/20 rounded-full px-4 py-1.5 mb-5">
+          <span className="text-xs text-[#DC2626] font-medium uppercase tracking-widest">Features</span>
         </div>
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4">
           Everything you need to{' '}

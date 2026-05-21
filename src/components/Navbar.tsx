@@ -23,14 +23,14 @@ export default function Navbar() {
     <header
       className={clsx(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        scrolled ? 'bg-[#0F0F1A]/90 backdrop-blur-md border-b border-white/5 shadow-lg' : 'bg-transparent'
+        scrolled ? 'bg-[#0F0A0A]/90 backdrop-blur-md border-b border-white/5 shadow-lg' : 'bg-transparent'
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-[#6C63FF] flex items-center justify-center group-hover:bg-[#4B44CC] transition-colors">
+            <div className="w-8 h-8 rounded-lg bg-[#DC2626] flex items-center justify-center group-hover:bg-[#B91C1C] transition-colors">
               <Zap className="w-4 h-4 text-white" />
             </div>
             <span className="font-bold text-lg text-white">NovaSpark</span>
@@ -56,7 +56,7 @@ export default function Navbar() {
             </a>
             <a
               href="#pricing"
-              className="text-sm font-medium bg-[#6C63FF] hover:bg-[#4B44CC] text-white px-4 py-2 rounded-lg transition-colors"
+              className="text-sm font-medium bg-[#DC2626] hover:bg-[#B91C1C] text-white px-4 py-2 rounded-lg transition-colors"
             >
               Get started free
             </a>
@@ -75,7 +75,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-[#0F0F1A]/95 backdrop-blur-md border-b border-white/5">
+        <div className="md:hidden bg-[#0F0A0A]/95 backdrop-blur-md border-b border-white/5">
           <nav className="flex flex-col px-4 py-4 gap-4">
             {navLinks.map((link) => (
               <a
@@ -89,7 +89,7 @@ export default function Navbar() {
             ))}
             <a
               href="#pricing"
-              className="text-sm font-medium bg-[#6C63FF] hover:bg-[#4B44CC] text-white px-4 py-2 rounded-lg text-center transition-colors"
+              className="text-sm font-medium bg-[#DC2626] hover:bg-[#B91C1C] text-white px-4 py-2 rounded-lg text-center transition-colors"
               onClick={() => setMobileOpen(false)}
             >
               Get started free

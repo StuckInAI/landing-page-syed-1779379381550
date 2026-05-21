@@ -15,9 +15,9 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background blobs */}
-      <div className="blob-bg w-96 h-96 bg-[#6C63FF] -top-20 -left-20" />
-      <div className="blob-bg w-80 h-80 bg-[#FF6584] top-1/3 -right-20" />
-      <div className="blob-bg w-64 h-64 bg-[#6C63FF] bottom-0 left-1/3" />
+      <div className="blob-bg w-96 h-96 bg-[#DC2626] -top-20 -left-20" />
+      <div className="blob-bg w-80 h-80 bg-[#EAB308] top-1/3 -right-20" />
+      <div className="blob-bg w-64 h-64 bg-[#DC2626] bottom-0 left-1/3" />
 
       {/* Grid overlay */}
       <div
@@ -30,9 +30,9 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-[#6C63FF]/10 border border-[#6C63FF]/30 rounded-full px-4 py-1.5 mb-8">
-          <span className="w-2 h-2 rounded-full bg-[#6C63FF] animate-pulse" />
-          <span className="text-sm text-[#6C63FF] font-medium">Now in public beta — join 12,000+ teams</span>
+        <div className="inline-flex items-center gap-2 bg-[#DC2626]/10 border border-[#DC2626]/30 rounded-full px-4 py-1.5 mb-8">
+          <span className="w-2 h-2 rounded-full bg-[#DC2626] animate-pulse" />
+          <span className="text-sm text-[#DC2626] font-medium">Now in public beta — join 12,000+ teams</span>
         </div>
 
         {/* Headline */}
@@ -57,18 +57,18 @@ export default function Hero() {
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
               placeholder="Enter your work email"
               required
-              className="flex-1 bg-white/5 border border-white/10 text-white placeholder-white/30 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#6C63FF]/60 focus:bg-white/8 transition-all"
+              className="flex-1 bg-white/5 border border-white/10 text-white placeholder-white/30 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#DC2626]/60 focus:bg-white/8 transition-all"
             />
             <button
               type="submit"
-              className="flex items-center justify-center gap-2 bg-[#6C63FF] hover:bg-[#4B44CC] text-white font-medium px-6 py-3 rounded-lg transition-colors whitespace-nowrap text-sm"
+              className="flex items-center justify-center gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white font-medium px-6 py-3 rounded-lg transition-colors whitespace-nowrap text-sm"
             >
               Get started free <ArrowRight className="w-4 h-4" />
             </button>
           </form>
         ) : (
-          <div className="flex items-center justify-center gap-2 max-w-md mx-auto mb-6 bg-[#6C63FF]/10 border border-[#6C63FF]/30 rounded-lg px-6 py-4">
-            <span className="text-[#6C63FF] font-medium">🎉 You're on the list! We'll be in touch soon.</span>
+          <div className="flex items-center justify-center gap-2 max-w-md mx-auto mb-6 bg-[#DC2626]/10 border border-[#DC2626]/30 rounded-lg px-6 py-4">
+            <span className="text-[#DC2626] font-medium">🎉 You're on the list! We'll be in touch soon.</span>
           </div>
         )}
 
@@ -78,10 +78,10 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 mb-16">
           <div className="flex items-center gap-3">
             <div className="flex -space-x-2">
-              {['#FF6584','#6C63FF','#43D9AD','#FFB347'].map((color, i) => (
+              {['#DC2626','#EAB308','#B91C1C','#CA8A04'].map((color, i) => (
                 <div
                   key={i}
-                  className="w-8 h-8 rounded-full border-2 border-[#0F0F1A] flex items-center justify-center text-xs font-bold text-white"
+                  className="w-8 h-8 rounded-full border-2 border-[#0F0A0A] flex items-center justify-center text-xs font-bold text-white"
                   style={{ backgroundColor: color }}
                 >
                   {['A','B','C','D'][i]}
@@ -103,18 +103,18 @@ export default function Hero() {
 
         {/* Hero image / dashboard mockup */}
         <div className="relative max-w-4xl mx-auto">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0F0F1A] via-transparent to-transparent z-10 pointer-events-none rounded-2xl" />
-          <div className="bg-[#16162A] border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0F0A0A] via-transparent to-transparent z-10 pointer-events-none rounded-2xl" />
+          <div className="bg-[#1A0E0E] border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
             {/* Window chrome */}
-            <div className="flex items-center gap-2 px-4 py-3 border-b border-white/10 bg-[#1E1E35]">
-              <div className="w-3 h-3 rounded-full bg-[#FF6584]/80" />
+            <div className="flex items-center gap-2 px-4 py-3 border-b border-white/10 bg-[#221414]">
+              <div className="w-3 h-3 rounded-full bg-[#DC2626]/80" />
               <div className="w-3 h-3 rounded-full bg-yellow-400/80" />
-              <div className="w-3 h-3 rounded-full bg-[#43D9AD]/80" />
+              <div className="w-3 h-3 rounded-full bg-[#EAB308]/80" />
               <div className="flex-1 mx-4">
-                <div className="bg-[#0F0F1A] rounded-md px-3 py-1 text-xs text-white/30 text-center">app.novaspark.io/dashboard</div>
+                <div className="bg-[#0F0A0A] rounded-md px-3 py-1 text-xs text-white/30 text-center">app.novaspark.io/dashboard</div>
               </div>
               <button
-                className="flex items-center gap-1.5 bg-[#6C63FF]/20 hover:bg-[#6C63FF]/30 text-[#6C63FF] px-3 py-1 rounded-md text-xs transition-colors"
+                className="flex items-center gap-1.5 bg-[#DC2626]/20 hover:bg-[#DC2626]/30 text-[#DC2626] px-3 py-1 rounded-md text-xs transition-colors"
                 onClick={() => {}}
               >
                 <Play className="w-3 h-3" /> Watch demo
@@ -125,7 +125,7 @@ export default function Hero() {
               {/* Sidebar */}
               <div className="col-span-2 flex flex-col gap-3">
                 {['Dashboard','Projects','Deploys','Analytics','Settings'].map((item, i) => (
-                  <div key={i} className={`px-3 py-2 rounded-lg text-xs ${i === 0 ? 'bg-[#6C63FF]/20 text-[#6C63FF]' : 'text-white/30'}`}>{item}</div>
+                  <div key={i} className={`px-3 py-2 rounded-lg text-xs ${i === 0 ? 'bg-[#DC2626]/20 text-[#DC2626]' : 'text-white/30'}`}>{item}</div>
                 ))}
               </div>
               {/* Main */}
@@ -138,28 +138,28 @@ export default function Hero() {
                     { label: 'Build Time', value: '1.4s', delta: '-34%' },
                     { label: 'Team Members', value: '24', delta: '+3' },
                   ].map((stat, i) => (
-                    <div key={i} className="bg-[#1E1E35] rounded-lg p-3">
+                    <div key={i} className="bg-[#221414] rounded-lg p-3">
                       <div className="text-white/40 text-[10px] mb-1">{stat.label}</div>
                       <div className="text-white font-bold text-sm">{stat.value}</div>
-                      <div className="text-[#43D9AD] text-[10px]">{stat.delta}</div>
+                      <div className="text-[#EAB308] text-[10px]">{stat.delta}</div>
                     </div>
                   ))}
                 </div>
                 {/* Chart placeholder */}
-                <div className="bg-[#1E1E35] rounded-lg p-4 h-32 flex items-end gap-1">
+                <div className="bg-[#221414] rounded-lg p-4 h-32 flex items-end gap-1">
                   {[40,65,45,80,55,90,70,85,60,95,75,100].map((h, i) => (
                     <div
                       key={i}
                       className="flex-1 rounded-sm transition-all"
-                      style={{ height: `${h}%`, backgroundColor: i === 11 ? '#6C63FF' : 'rgba(108,99,255,0.3)' }}
+                      style={{ height: `${h}%`, backgroundColor: i === 11 ? '#DC2626' : 'rgba(220,38,38,0.3)' }}
                     />
                   ))}
                 </div>
                 {/* List */}
-                <div className="bg-[#1E1E35] rounded-lg p-3 flex flex-col gap-2">
+                <div className="bg-[#221414] rounded-lg p-3 flex flex-col gap-2">
                   {['feat/payment-api — deployed 2min ago','fix/auth-timeout — deployed 15min ago','chore/deps-update — deployed 1hr ago'].map((item, i) => (
                     <div key={i} className="flex items-center gap-2">
-                      <div className="w-2 h-2 rounded-full bg-[#43D9AD]" />
+                      <div className="w-2 h-2 rounded-full bg-[#EAB308]" />
                       <span className="text-white/50 text-[10px]">{item}</span>
                     </div>
                   ))}
