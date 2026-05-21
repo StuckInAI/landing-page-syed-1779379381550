@@ -26,7 +26,7 @@ const faqs: FAQItemProps[] = [
   {
     question: 'How does billing work?',
     answer:
-      'You're billed monthly or annually based on your chosen plan. Usage-based overages are billed at the end of each billing cycle. You can upgrade, downgrade, or cancel anytime.',
+      "You're billed monthly or annually based on your chosen plan. Usage-based overages are billed at the end of each billing cycle. You can upgrade, downgrade, or cancel anytime.",
   },
   {
     question: 'Is my code and data secure?',
